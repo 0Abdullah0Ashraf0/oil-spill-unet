@@ -1,0 +1,93 @@
+{
+ "data_root": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill",
+ "splits": {
+  "train": {
+   "images_dir": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill\\train\\images",
+   "masks_dir": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill\\train\\labels",
+   "pairs": 1002,
+   "images_without_mask": [],
+   "masks_without_image": []
+  },
+  "test": {
+   "images_dir": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill\\test\\images",
+   "masks_dir": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill\\test\\labels",
+   "pairs": 110,
+   "images_without_mask": [],
+   "masks_without_image": []
+  }
+ },
+ "image_sizes": {
+  "1250x650": 1002
+ },
+ "(image_mode, mask_mode)": {
+  "('RGB', 'RGB')": 1002
+ },
+ "size_mismatch_image_vs_mask": [],
+ "mask_exact_match_fraction": 1.0,
+ "distinct_mask_colours": 5,
+ "top_colours": [
+  {
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "fraction": 0.8805612553354829
+  },
+  {
+   "rgb": [
+    255,
+    0,
+    0
+   ],
+   "fraction": 0.05629716075541225
+  },
+  {
+   "rgb": [
+    0,
+    153,
+    0
+   ],
+   "fraction": 0.05265317610931982
+  },
+  {
+   "rgb": [
+    0,
+    255,
+    255
+   ],
+   "fraction": 0.010062361430984185
+  },
+  {
+   "rgb": [
+    153,
+    76,
+    0
+   ],
+   "fraction": 0.0004260463688008598
+  }
+ ],
+ "train_class_pixel_share": {
+  "sea": 0.8805612553354829,
+  "oil_spill": 0.010062361430984185,
+  "look_alike": 0.05629716075541225,
+  "ship": 0.0004260463688008598,
+  "land": 0.05265317610931982
+ },
+ "images_containing_class": {
+  "train": {
+   "sea": 995,
+   "oil_spill": 791,
+   "look_alike": 441,
+   "ship": 334,
+   "land": 236
+  },
+  "test": {
+   "sea": 110,
+   "oil_spill": 88,
+   "look_alike": 55,
+   "ship": 35,
+   "land": 29
+  }
+ }
+}

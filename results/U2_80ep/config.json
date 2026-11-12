@@ -1,0 +1,78 @@
+{
+ "data_root": "E:\\gam3a\\sem 7\\professional training in ai 2\\Assignment 2 - Oil Spill Segmentation (Team Plan)\\archive\\oil-spill",
+ "run_id": "U2_80ep",
+ "loss": "wce_dice",
+ "weight_method": "inv_sqrt",
+ "dice_w": 1.0,
+ "aug": "flip",
+ "norm": "half",
+ "epochs": 80,
+ "bs": 8,
+ "lr": 0.001,
+ "wd": 0.0001,
+ "height": 256,
+ "width": 512,
+ "base": 32,
+ "depth": 4,
+ "seed": 42,
+ "val_frac": 0.15,
+ "workers": 4,
+ "no_amp": false,
+ "deterministic": false,
+ "resume": false,
+ "class_map": "audit/class_map.json",
+ "splits": "splits.json",
+ "out": "results",
+ "n_params": 7763173,
+ "class_weights": [
+  0.07782085239887238,
+  0.7337402105331421,
+  0.3020397424697876,
+  3.5699045658111572,
+  0.3164946436882019
+ ],
+ "norm_mean_std": [
+  [
+   0.5,
+   0.5,
+   0.5
+  ],
+  [
+   0.5,
+   0.5,
+   0.5
+  ]
+ ],
+ "colors": [
+  [
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   255,
+   255
+  ],
+  [
+   255,
+   0,
+   0
+  ],
+  [
+   153,
+   76,
+   0
+  ],
+  [
+   0,
+   153,
+   0
+  ]
+ ],
+ "pretrained": false,
+ "optimizer": "AdamW",
+ "scheduler": "CosineAnnealingLR",
+ "torch": "2.11.0+cu128",
+ "augmentation": "random h+v flip"
+}
